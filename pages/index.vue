@@ -3,6 +3,8 @@
     <main>
       <ContentsAbout />
       <!-- <ContentsInsights /> -->
+      <ContentsCli />
+      <ContentsMap />
       <ContentsGetStarted />
     </main>
     <TheFooter />
