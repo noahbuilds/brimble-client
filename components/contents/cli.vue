@@ -3,7 +3,7 @@
     class="max-w-6xl mx-auto py-12 md:py-24 md:px-4 flex flex-col md:flex-row-reverse items-center gap-6 lg:gap-12"
   >
     <div class="w-full px-4 md:px-0">
-      <h1 class="text-[32px] md:text-4xl">
+      <h1 class="text-[32px] md:text-4xl text-secondary">
         Work with our <span class="text-primary">CLI</span> easily.
       </h1>
 

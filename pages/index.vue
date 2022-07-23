@@ -3,6 +3,7 @@
     <main>
       <ContentsAbout />
       <!-- <ContentsInsights /> -->
+      <ContentsStructure />
       <ContentsCli />
       <ContentsMap />
       <ContentsGetStarted />
