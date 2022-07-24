@@ -13,7 +13,7 @@
       </p>
 
       <button
-        class="font-semibold py-4 w-[175px] bg-primary text-white mt-8 rounded-xl md:hidden"
+        class="font-semibold py-6 w-[175px] bg-primary text-white mt-8 rounded-xl md:hidden"
       >
         Get Started
       </button>

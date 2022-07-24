@@ -6,6 +6,7 @@
       <ContentsStructure />
       <ContentsCollaboration />
       <ContentsCli />
+      <ContentsIntegration />
       <ContentsMap />
       <ContentsGetStarted />
     </main>

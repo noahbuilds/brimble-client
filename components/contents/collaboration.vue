@@ -2,7 +2,7 @@
   <section
     class="max-w-6xl mx-auto py-14 px-4 flex flex-col md:flex-row gap-12"
   >
-    <div class="max-w-[450px] w-full md:py-24">
+    <div class="max-w-[380px] w-full md:py-24">
       <h1 class="text-[32px] md:text-4xl text-secondary">
         <span class="text-primary">Collaborate</span> with others in realtime.
       </h1>
