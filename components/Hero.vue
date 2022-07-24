@@ -20,7 +20,7 @@
     </div>
 
     <div class="mt-20">
-      <img src="/img/hero-img.svg" />
+      <img class="w-full" src="/img/hero-img.svg" />
     </div>
   </section>
 </template>

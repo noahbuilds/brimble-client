@@ -18,7 +18,7 @@
     </div>
 
     <div class="relative hidden sm:block">
-      <img class="h-auto lg:h-[90vh]" src="/img/analytics.png" />
+      <img class="h-auto lg:h-[740px]" src="/img/analytics.png" />
 
       <div class="absolute bottom-20 -left-40">
         <img src="/img/stats.svg">
