@@ -4,6 +4,7 @@
       <ContentsAbout />
       <!-- <ContentsInsights /> -->
       <ContentsStructure />
+      <ContentsCollaboration />
       <ContentsCli />
       <ContentsMap />
       <ContentsGetStarted />

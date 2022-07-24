@@ -33,7 +33,7 @@
     <div
       class="bg-gradient-to-b from-[#2E5CB8] to-[#7094DB] pt-20 sm:py-32 px-4 sm:px-12 rounded-[20px] relative mt-16 overflow-hidden"
     >
-      <div class="text-white space-y-7 max-w-[543px]">
+      <div class="text-white space-y-7 max-w-[543px] relative z-10">
         <h1 class="text-[64px] md:text-[120px] leading-none font-extrabold">
           è fì lẹ̀
         </h1>
@@ -54,10 +54,9 @@
         </button>
       </div>
 
-  <div class="sm:hidden mt-20 relative z-10">
+      <div class="sm:hidden mt-20 relative z-10">
         <img class="mx-auto" src="/img/person-mobile.svg" />
       </div>
-     
 
       <div class="absolute bottom-0 right-0 hidden sm:block">
         <img src="/img/brimble-bg-icon.svg" />
@@ -68,8 +67,6 @@
       <div class="absolute bottom-0 right-0 hidden sm:block">
         <img class="h-[240px] md:h-[320px] lg:h-auto" src="/img/person.svg" />
       </div>
-
-     
     </div>
   </section>
 </template>

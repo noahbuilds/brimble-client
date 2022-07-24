@@ -1,6 +1,6 @@
 <template>
   <section class="max-w-6xl mx-auto py-16 md:pt-24 px-4 flex flex-col md:flex-row-reverse gap-14">
-    <div class="max-w-[450px] w-full md:y-24">
+    <div class="max-w-[450px] w-full md:py-24">
       <h1 class="text-[32px] md:text-4xl text-secondary">
         Manage Stages in a single <span class="text-primary">project</span>.
       </h1>
