@@ -63,7 +63,8 @@
     <div
       class="bg-transparent md:bg-[#F3F6FC] rounded-3xl md:px-6 flex items-center h-auto md:h-[580px] lg:h-[700px] w-full"
     >
-      <img class="w-full" src="/img/terminal.svg" />
+      <img class="w-full hidden sm:block" src="/img/terminal.svg" />
+      <img class="w-full sm:hidden" src="/img/terminal-mobile.svg" />
     </div>
   </section>
 </template>

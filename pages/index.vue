@@ -1,6 +1,8 @@
 <template>
   <div>
+   <TheHeader />
     <main>
+      <Hero />
       <ContentsAbout />
       <!-- <ContentsInsights /> -->
       <ContentsStructure />
