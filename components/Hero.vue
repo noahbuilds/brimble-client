@@ -1,14 +1,14 @@
 <template>
   <section>
     <div :class="darkMode ? 'bg-[#000B1D]' : 'bg-[#f5f6fd]'">
-      <header class="py-6 max-w-6xl mx-auto flex items-center justify-between">
+      <header class="py-6 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-3.5">
         <div></div>
         <img v-if="!darkMode" src="/img/brimble-logo-dark.svg" />
         <img v-else src="/img/brimble-logo-white.svg" />
 
         <div
           @click="darkMode = !darkMode"
-          class=" w-14 h-6 rounded-full p-0.5 bg-[#c4c4c4] cursor-pointer relative transition-all duration-200"
+          class="w-14 h-6 rounded-full p-0.5 bg-[#c4c4c4] cursor-pointer relative transition-all duration-200"
           
         >
           <div
