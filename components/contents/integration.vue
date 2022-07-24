@@ -17,5 +17,15 @@
     <div>
       <img src="/img/integrate-img.svg" />
     </div>
+    <!-- <div>
+      <LottieVuePlayer
+        src="https://assets5.lottiefiles.com/packages/lf20_tuniawqh.json" :autoplay="true"
+      />
+    </div> -->
   </section>
 </template>
+
+<script>
+export default {
+};
+</script>
