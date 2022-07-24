@@ -4,7 +4,7 @@
     <main>
       <Hero />
       <ContentsAbout />
-      <!-- <ContentsInsights /> -->
+      <ContentsInsights />
       <ContentsStructure />
       <ContentsCollaboration />
       <ContentsCli />
