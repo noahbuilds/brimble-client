@@ -4,7 +4,7 @@
     :class="darkMode ? 'bg-[#000B1D]' : 'bg-[#f5f6fd]'"
   >
     <div class="absolute inset-x-0 bottom-0">
-      <img src="/img/moon-bg.svg" />
+      <img class="w-full" src="/img/moon-bg.svg" />
     </div>
 
     <div class="mb-16">
@@ -33,7 +33,7 @@
           <img src="/img/404-dark.svg" />
 
           <div class="absolute -bottom-24 -left-24">
-            <img class="h-48 sm:h-auto"  src="/img/astronaut.svg" />
+            <img class="h-48 sm:h-auto" src="/img/astronaut.svg" />
           </div>
         </div>
         <h1
