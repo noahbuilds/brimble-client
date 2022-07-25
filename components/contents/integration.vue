@@ -17,7 +17,7 @@
 
     <div class="relative rounded-full">
       <img
-        class="rounded-full animate-spin-slow origin-center w-full h-full"
+        class="animate-spin-slow origin-center w-full h-full"
         src="/img/integrate-circle.svg"
       />
       <img
