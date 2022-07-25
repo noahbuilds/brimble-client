@@ -11,11 +11,20 @@
       </div>
 
       <div class="space-y-5 flex flex-col self-end">
-        <a class="font-semibold text-lg text-primary self-end" href="#">Docs</a>
+        <a
+          class="font-semibold text-lg text-primary self-end"
+          href="https://docs.brimble.io/"
+          target="_blank"
+          >Docs</a
+        >
 
         <div class="flex gap-6 items-center">
-          <img src="/img/icons/twitter.svg" alt="" />
-          <img src="/img/icons/github.svg" alt="" />
+          <a href="https://twitter.com/brimblehq" target="_blank">
+            <img src="/img/icons/twitter.svg" />
+          </a>
+          <a href="https://github.com/brimblehq" target="_blank">
+            <img src="/img/icons/github.svg" />
+          </a>
         </div>
       </div>
     </div>
@@ -25,11 +34,20 @@
         <img src="/img/brimble-logo.svg" />
       </div>
       <div class="flex gap-6 items-center">
-        <img src="/img/icons/twitter.svg" alt="" />
-        <img src="/img/icons/github.svg" alt="" />
+        <a href="https://twitter.com/brimblehq" target="_blank">
+          <img src="/img/icons/twitter.svg" />
+        </a>
+        <a href="https://github.com/brimblehq" target="_blank">
+          <img src="/img/icons/github.svg" />
+        </a>
       </div>
       <div>
-        <a class="font-semibold text-lg text-primary self-end" href="#">Docs</a>
+        <a
+          class="font-semibold text-lg text-primary self-end"
+          href="https://docs.brimble.io/"
+          target="_blank"
+          >Docs</a
+        >
       </div>
 
       <hr />
