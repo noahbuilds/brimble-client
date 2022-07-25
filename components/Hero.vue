@@ -1,5 +1,8 @@
 <template>
-  <section class="min-h-screen" :class="darkMode ? 'background' : 'bg-[#f5f6fd]'">
+  <section
+    class="min-h-screen overflow-x-hidden"
+    :class="darkMode ? 'background' : 'bg-[#f5f6fd]'"
+  >
     <div>
       <header
         class="py-6 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-3.5"

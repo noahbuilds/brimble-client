@@ -15,8 +15,15 @@
       </button>
     </div>
 
-    <div>
-      <img class="animate-spin-slow" src="/img/integrate-img.svg" />
+    <div class="relative rounded-full">
+      <img
+        class="rounded-full animate-spin-slow origin-center w-full h-full"
+        src="/img/integrate-circle.svg"
+      />
+      <img
+        class="rounded-full w-1/4 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+        src="/img/integrate-logo.svg"
+      />
     </div>
   </section>
 </template>
