@@ -1,6 +1,8 @@
 <template>
-  <section>
-    <div :class="darkMode ? 'bg-[#000B1D]' : 'bg-[#f5f6fd]'">
+  <section class="min-h-screen" :class="darkMode ? 'background' : 'bg-[#f5f6fd]'">
+
+
+    <div >
       <header class="py-6 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-3.5">
         <div></div>
         <img v-if="!darkMode" src="/img/brimble-logo-dark.svg" />
@@ -19,10 +21,10 @@
       </header>
     </div>
 
-    <div v-if="!darkMode" class="bg-[#f5f6fd]">
-      <div class="text-center pt-28 px-7">
+    <template v-if="!darkMode">
+      <div class="text-center pt-28 px-4">
         <h1
-          class="font-extrabold text-primary text-[56px] md:text-8xl lg:text-[120px] leading-none"
+          class="font-extrabold text-primary text-5xl md:text-8xl lg:text-[120px] leading-none"
         >
           Deployment
         </h1>
@@ -46,12 +48,12 @@
       <div class="mt-20">
         <img class="w-full" src="/img/hero-img.svg" />
       </div>
-    </div>
+    </template>
 
-    <div v-else class="bg-[#000B1D]">
-      <div class="text-center pt-28 px-7">
+    <template v-else >
+      <div class="text-center pt-28 px-4">
         <h1
-          class="font-extrabold text-primary text-[56px] md:text-8xl lg:text-[120px] leading-none"
+          class="font-extrabold text-primary text-5xl md:text-8xl lg:text-[120px] leading-none"
         >
           Deployment
         </h1>
@@ -75,7 +77,7 @@
       <div class="mt-20">
         <img class="w-full" src="/img/hero-img-dark.svg" />
       </div>
-    </div>
+    </template>
   </section>
 </template>
 
@@ -88,3 +90,11 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.background {
+  background-image: url('/img/hero-bg-dark.svg');
+  background-size: cover;
+  background-position: center;
+}
+</style>
