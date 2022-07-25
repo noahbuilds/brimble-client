@@ -99,12 +99,11 @@ export default {
       darkMode: true,
     };
   },
+
   methods: {
     switchModes() {
       this.darkMode = !this.darkMode;
     },
-  },
-  methods: {
     toggleSidebar() {
       this.$store.commit("toggleSidebar");
     },
