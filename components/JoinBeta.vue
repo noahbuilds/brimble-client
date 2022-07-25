@@ -1,8 +1,13 @@
 <template>
-  <div v-if="sidebar" @click="toggleSidebar" class="fixed inset-0 bg-black bg-opacity-40 z-50">
+  <div
+    @click="toggleSidebar"
+    class="fixed inset-0 bg-black bg-opacity-40 transitiion-all duration-500"
+    :class="sidebar ? 'bg-opacity-40 z-50':'bg-opacity-0 -z-10'"
+  >
     <div
       @click.stop=""
-      class="bg-white px-7 py-8 fixed h-[428px] md:h-auto md:w-[480px] inset-x-0 md:inset-x-auto md:inset-y-0 bottom-0 md:right-0 flex flex-col overflow-auto rounded-t-xl md:rounded-none z-50"
+      class="bg-white px-7 py-8 fixed md:h-auto inset-x-0 md:inset-x-auto md:inset-y-0 bottom-0 md:right-0 flex flex-col overflow-auto rounded-t-xl md:rounded-none z-50 transition-all duration-500"
+      :class="sidebar ? 'md:w-[480px] h-[428px]' : 'md:w-0 h-0 md:opacity-0'"
     >
       <div class="hidden md:block">
         <img src="/img/join-beta.svg" />
