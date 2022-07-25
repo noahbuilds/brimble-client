@@ -38,7 +38,7 @@
           way to host & scale your web app.
         </p>
 
-        <button
+        <button @click="toggleSidebar"
           class="font-semibold py-5 md:py-6 w-[196px] bg-primary text-white mt-12 rounded-xl"
         >
           Get Started
@@ -67,7 +67,7 @@
           way to host & scale your web app.
         </p>
 
-        <button
+        <button @click="toggleSidebar"
           class="font-semibold py-5 md:py-6 w-[196px] bg-primary text-white mt-12 rounded-xl"
         >
           Get Started
@@ -87,6 +87,11 @@ export default {
     return {
       darkMode: true,
     };
+  },
+   methods: {
+    toggleSidebar() {
+      this.$store.commit("toggleSidebar");
+    },
   },
 };
 </script>
