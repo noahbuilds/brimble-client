@@ -12,6 +12,9 @@
       <ContentsMap />
       <ContentsGetStarted />
     </main>
+    <aside>
+      <JoinBeta />
+    </aside>
     <TheFooter />
   </div>
 </template>

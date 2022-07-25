@@ -38,6 +38,7 @@
         </p>
 
         <button
+          @click="toggleSidebar"
           class="font-semibold py-5 md:py-6 w-[196px] bg-primary text-white mt-12 rounded-xl"
         >
           Get Started
@@ -72,6 +73,7 @@
         </p>
 
         <button
+          @click="toggleSidebar"
           class="font-semibold py-5 md:py-6 w-[196px] bg-primary text-white mt-12 rounded-xl"
         >
           Get Started
@@ -100,6 +102,11 @@ export default {
   methods: {
     switchModes() {
       this.darkMode = !this.darkMode;
+    },
+  },
+  methods: {
+    toggleSidebar() {
+      this.$store.commit("toggleSidebar");
     },
   },
   mounted() {

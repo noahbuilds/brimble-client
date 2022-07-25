@@ -13,6 +13,7 @@
       </p>
 
       <button
+        @click="toggleSidebar"
         class="font-semibold py-6 w-[196px] bg-primary text-white mt-8 rounded-xl"
       >
         Get Started
@@ -24,3 +25,13 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleSidebar() {
+      this.$store.commit("toggleSidebar");
+    },
+  },
+};
+</script>

@@ -10,6 +10,7 @@
       </h1>
 
       <button
+        @click="toggleSidebar"
         class="bg-white py-6 px-8 text-black mt-16 md:mt-20 rounded-xl mb-8 font-medium relative z-10"
       >
         Get Started with Brimble
@@ -22,6 +23,16 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleSidebar() {
+      this.$store.commit("toggleSidebar");
+    },
+  },
+};
+</script>
 
 <style scoped>
 @media screen and (min-width: 768px) {

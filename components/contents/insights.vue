@@ -13,7 +13,10 @@
       <p class="text-paragraph">
         Better accuracy, better performance, and better privacy for your visitors.
       </p>
-      <button class="bg-primary rounded-xl py-6 font-semibold text-white w-48">
+      <button
+        @click="toggleSidebar"
+        class="bg-primary rounded-xl py-6 font-semibold text-white w-48"
+      >
         Get Started
       </button>
     </div>
@@ -22,7 +25,7 @@
       <img class="h-auto lg:h-[740px] box" src="/img/analytics.png" />
 
       <div class="absolute bottom-20 -left-40">
-        <img src="/img/stats.svg" class="box" />
+        <img src="/img/stats.svg" />
       </div>
     </div>
     <div class="sm:hidden">
@@ -37,6 +40,11 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger.min.js";
 export default {
   data() {
     return {};
+  },
+  methods: {
+    toggleSidebar() {
+      this.$store.commit("toggleSidebar");
+    },
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);

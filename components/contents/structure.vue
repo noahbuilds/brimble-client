@@ -1,5 +1,7 @@
 <template>
-  <section class="max-w-6xl mx-auto py-16 md:pt-24 px-4 flex flex-col md:flex-row-reverse gap-14">
+  <section
+    class="max-w-6xl mx-auto py-16 md:pt-24 px-4 flex flex-col md:flex-row-reverse gap-14"
+  >
     <div class="max-w-[450px] w-full md:py-24">
       <h1 class="text-[32px] md:text-4xl text-secondary">
         Manage Stages in a single <span class="text-primary">project</span>.
@@ -12,6 +14,7 @@
       </p>
 
       <button
+        @click="toggleSidebar"
         class="font-semibold py-6 w-[196px] bg-primary text-white mt-8 rounded-xl"
       >
         Get Started
@@ -24,3 +27,13 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleSidebar() {
+      this.$store.commit("toggleSidebar");
+    },
+  },
+};
+</script>

@@ -9,7 +9,7 @@
       <div class="mt-10 md:mt-28 flex flex-col md:flex-row gap-6 md:gap-5">
         <div
           v-for="(step, index) in steps"
-          :key="step"
+          :key="index"
           class="bg-[#fafbfe] rounded-lg px-6 md:h-[280px] w-full py-8 md:py-0"
         >
           <div class="md:h-[102px] relative">
@@ -49,7 +49,10 @@
           On brimble, you may launch your projects and cooperate with other
           developers.
         </p>
-        <button class="py-6 px-8 bg-white text-black rounded-xl font-medium">
+        <button
+          @click="toggleSidebar"
+          class="py-6 px-8 bg-white text-black rounded-xl font-medium"
+        >
           Get Started with Brimble
         </button>
       </div>
@@ -93,6 +96,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    toggleSidebar() {
+      this.$store.commit("toggleSidebar");
+    },
   },
 };
 </script>
