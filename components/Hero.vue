@@ -51,7 +51,7 @@
       <div class="mt-20 relative">
         <img
           class="md:w-full min-w-5xl absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
-          src="../static/img/hero-icons2.svg"
+          src="../static/img/hero-icons2-new.svg"
           alt=""
         />
         <img class="md:w-1/2 mx-auto paraa relative" src="/img/hero-img.svg" />
@@ -86,7 +86,7 @@
       <div class="mt-20 relative">
         <img
           class="md:w-full min-w-5xl absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
-          src="../static/img/hero-icons.svg"
+          src="../static/img/hero-icons-new.svg"
           alt=""
         />
         <img class="md:w-1/2 mx-auto para relative" src="/img/hero.svg" />
