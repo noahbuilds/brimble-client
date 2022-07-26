@@ -39,10 +39,6 @@ export default {
         "vue-toastification/nuxt"
     ],
 
-    server: {
-        port: 8080,
-    },
-
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
         postcss: {
