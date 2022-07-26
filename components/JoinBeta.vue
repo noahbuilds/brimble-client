@@ -189,7 +189,7 @@ export default {
         this.last_name = "";
         this.email = "";
       } catch (error) {
-        this.$toast.error(error.message);
+        this.$toast.error(error.response.data.message);
       } finally {
         this.loading = false;
       }
