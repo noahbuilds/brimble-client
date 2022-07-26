@@ -8,7 +8,7 @@
       >
         Start deploying now and showcase with developers what you've built.
       </h1>
-      <div class="mt-16 md:mt-20 mb-8 relative z-10 flex items-center gap-8">
+      <div class="mt-16 md:mt-20 mb-8 relative z-10 flex flex-col md:flex-row items-center gap-8">
         <button
           @click="toggleSidebar"
           class="bg-white py-6 px-8 text-black rounded-xl font-medium"
