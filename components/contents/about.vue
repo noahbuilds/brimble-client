@@ -33,13 +33,15 @@
     <div
       class="bg-gradient-to-b from-[#2E5CB8] to-[#7094DB] pt-20 sm:py-32 px-4 sm:px-12 rounded-[20px] relative mt-16 overflow-hidden"
     >
-      <div class="text-white space-y-7 max-w-[543px] relative z-10">
-        <h1 class="text-[64px] md:text-[120px] leading-none font-extrabold">
-          è fì lẹ̀
-        </h1>
-        <h1 class="text-[40px] md:text-[70px] leading-none font-semibold">
-          è jẹ̀ kó cook
-        </h1>
+      <div class="text-white space-y-6 max-w-[543px] relative z-10">
+        <div>
+          <img class="hidden md:block" src="/img/text-one.svg" />
+          <img class="md:hidden" src="/img/text-one-small.svg" />
+        </div>
+        <div>
+          <img class="hidden md:block" src="/img/text-two.svg" />
+          <img class="md:hidden" src="/img/text-two-small.svg" />
+        </div>
         <p>
           Brimble manages auto-scaling deployment for your frontend apps,
           powered by Google cloud GCP, whether you're constructing a basic
