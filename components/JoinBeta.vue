@@ -165,6 +165,7 @@ export default {
       email: "",
       loading: false,
       completedForm: false,
+      API_URL: process.env.NUXT_ENV_API_URL,
     };
   },
   methods: {
@@ -175,14 +176,11 @@ export default {
     async joinBeta() {
       this.loading = true;
       try {
-        const response = await this.$axios.$post(
-          "https://api.brimble.io/auth/waitlists",
-          {
-            first_name: this.first_name,
-            last_name: this.last_name,
-            email: this.email,
-          }
-        );
+        await this.$axios.$post(`${this.API_URL}/auth/waitlists`, {
+          first_name: this.first_name,
+          last_name: this.last_name,
+          email: this.email,
+        });
 
         this.completedForm = true;
         this.$refs.form.reset();
@@ -190,10 +188,17 @@ export default {
         this.last_name = "";
         this.email = "";
       } catch (error) {
-        if (error.response.status === 500) {
-          this.$toast.error("Could not add user to waitlist");
+        const { response } = error;
+        if (response) {
+          if (response.status === 500) {
+            this.$toast.error("Could not add user to waitlist");
+          } else {
+            this.$toast.error(response.data.message);
+          }
         } else {
-          this.$toast.error(error.response.data.message);
+          this.$toast.error(
+            "Couldn't connect to server; make sure you are connected to the internet"
+          );
         }
       } finally {
         this.loading = false;
