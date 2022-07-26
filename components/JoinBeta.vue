@@ -77,7 +77,8 @@
 
             <div class="space-y-2.5">
               <label class="flex gap-1.5 items-center" for=""
-                ><svg class="w-4"
+                ><svg
+                  class="w-4"
                   width="30.03px"
                   height="30.03px"
                   viewBox="0 -4.2 30.03 30.03"
@@ -189,7 +190,11 @@ export default {
         this.last_name = "";
         this.email = "";
       } catch (error) {
-        this.$toast.error(error.response.data.message);
+        if (error.response.status === 500) {
+          this.$toast.error("Could not add user to waitlist");
+        } else {
+          this.$toast.error(error.response.data.message);
+        }
       } finally {
         this.loading = false;
       }
