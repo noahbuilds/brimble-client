@@ -22,7 +22,7 @@ export default {
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [],
+    plugins: [{ src: "~/plugins/vee-validate",  ssr: true}],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
@@ -34,7 +34,14 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        "@nuxtjs/axios",
+        "vue-toastification/nuxt"
+    ],
+
+    server: {
+        port: 8080,
+    },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
@@ -44,6 +51,6 @@ export default {
                 autoprefixer: {},
             },
         },
-        transpile: ['lottie']
+        transpile: ["vee-validate/dist/rules"],
     }
 }
