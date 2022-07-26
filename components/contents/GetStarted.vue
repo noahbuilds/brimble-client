@@ -8,7 +8,9 @@
       >
         Start deploying now and showcase with developers what you've built.
       </h1>
-      <div class="mt-16 md:mt-20 mb-8 relative z-10 flex flex-col md:flex-row items-center gap-8">
+      <div
+        class="mt-16 md:mt-20 mb-8 relative z-10 flex flex-col md:flex-row items-center gap-8"
+      >
         <button
           @click="toggleSidebar"
           class="bg-white py-6 px-8 text-black rounded-xl font-medium"
@@ -16,14 +18,31 @@
           Get Started with Brimble
         </button>
 
-        <a href="https://www.youtube.com/watch?v=MPjzLXMQrKo&t=1s" target="_blank" class="flex items-center gap-3 cursor-pointer">
-          <img src="/img/icons/play.svg" />
-          <h1 class="font-semibold text-white">Deploying your Project on Brimble</h1>
+        <a
+          href="https://www.youtube.com/watch?v=MPjzLXMQrKo&t=1s"
+          target="_blank"
+          class="flex items-center gap-3 cursor-pointer"
+        >
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/icons/play.svg"
+          />
+          <h1 class="font-semibold text-white">
+            Deploying your Project on Brimble
+          </h1>
         </a>
       </div>
       <div class="absolute bottom-0 right-0">
-        <img class="hidden md:block" src="/img/brimble-bg-icon-2.svg" />
-        <img class="md:hidden" src="/img/brimble-bg-icon-2-small.svg" />
+        <nuxt-img
+          placeholder
+          class="hidden md:block"
+          src="https://storage.googleapis.com/brimble-assets/img/brimble-bg-icon-2.svg"
+        />
+        <nuxt-img
+          placeholder
+          class="md:hidden"
+          src="https://storage.googleapis.com/brimble-assets/img/brimble-bg-icon-2-small.svg"
+        />
       </div>
     </div>
   </section>

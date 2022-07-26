@@ -1,13 +1,15 @@
 <template>
-  <section class="max-w-6xl mx-auto py-14 px-4 flex flex-col md:flex-row gap-12">
+  <section
+    class="max-w-6xl mx-auto py-14 px-4 flex flex-col md:flex-row gap-12"
+  >
     <div class="max-w-[380px] w-full md:py-24">
       <h1 class="text-[32px] md:text-4xl text-secondary">
         <span class="text-primary">Collaborate</span> with others in realtime.
       </h1>
 
       <p class="text-paragraph mt-5 leading-6">
-        You can share, chat, and edit from anywhere in the world Brimble Live enables
-        real-time collaboration for your entire team
+        You can share, chat, and edit from anywhere in the world Brimble Live
+        enables real-time collaboration for your entire team
       </p>
 
       <button
@@ -19,22 +21,28 @@
     </div>
 
     <div class="relative editor">
-      <img
+      <nuxt-img
+        placeholder
         class="chat w-40 lg:w-auto absolute top-1/4 left-1/3"
-        src="../../static/img/chat1.svg"
+        src="https://storage.googleapis.com/brimble-assets/img/chat1.svg"
         alt=""
       />
-      <img
+      <nuxt-img
+        placeholder
         class="chat w-40 lg:w-auto absolute bottom-1/3 left-1/4"
-        src="../../static/img/chat2.svg"
+        src="https://storage.googleapis.com/brimble-assets/img/chat2.svg"
         alt=""
       />
-      <img
+      <nuxt-img
+        placeholder
         class="chat w-40 lg:w-auto absolute top-3/4 left-1/2"
-        src="../../static/img/chat3.svg"
+        src="https://storage.googleapis.com/brimble-assets/img/chat3.svg"
         alt=""
       />
-      <img src="/img/editor.svg" />
+      <nuxt-img
+        placeholder
+        src="https://storage.googleapis.com/brimble-assets/img/editor.svg"
+      />
     </div>
   </section>
 </template>

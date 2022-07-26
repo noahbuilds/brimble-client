@@ -3,7 +3,10 @@
     <div class="max-w-6xl mx-auto px-4 py-12 hidden md:flex justify-between">
       <div class="space-y-12">
         <div>
-          <img src="/img/brimble-logo.svg" />
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/brimble-logo.svg"
+          />
         </div>
         <p class="text-lg text-secondary">
           All Rights Reserved. © 2022 Brimble, Inc.
@@ -20,10 +23,16 @@
 
         <div class="flex gap-6 items-center">
           <a href="https://twitter.com/brimblehq" target="_blank">
-            <img src="/img/icons/twitter.svg" />
+            <nuxt-img
+              placeholder
+              src="https://storage.googleapis.com/brimble-assets/img/icons/twitter.svg"
+            />
           </a>
           <a href="https://github.com/brimblehq" target="_blank">
-            <img src="/img/icons/github.svg" />
+            <nuxt-img
+              placeholder
+              src="https://storage.googleapis.com/brimble-assets/img/icons/github.svg"
+            />
           </a>
         </div>
       </div>
@@ -31,14 +40,23 @@
 
     <div class="md:hidden space-y-12 px-4 py-12">
       <div>
-        <img src="/img/brimble-logo.svg" />
+        <nuxt-img
+          placeholder
+          src="https://storage.googleapis.com/brimble-assets/img/brimble-logo.svg"
+        />
       </div>
       <div class="flex gap-6 items-center">
         <a href="https://twitter.com/brimblehq" target="_blank">
-          <img src="/img/icons/twitter.svg" />
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/icons/twitter.svg"
+          />
         </a>
         <a href="https://github.com/brimblehq" target="_blank">
-          <img src="/img/icons/github.svg" />
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/icons/github.svg"
+          />
         </a>
       </div>
       <div>

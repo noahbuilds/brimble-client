@@ -16,13 +16,15 @@
     </div>
 
     <div class="relative rounded-full">
-      <img
+      <nuxt-img
+        placeholder
         class="animate-spin-slow origin-center w-full h-full"
-        src="/img/integrate-circle.svg"
+        src="https://storage.googleapis.com/brimble-assets/img/integrate-circle.svg"
       />
-      <img
+      <nuxt-img
+        placeholder
         class="rounded-full w-1/4 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
-        src="/img/integrate-logo.svg"
+        src="https://storage.googleapis.com/brimble-assets/img/integrate-logo.svg"
       />
     </div>
   </section>

@@ -4,7 +4,11 @@
     :class="darkMode ? 'bg-[#000B1D]' : 'bg-[#f5f6fd]'"
   >
     <div class="absolute inset-x-0 bottom-0">
-      <img class="w-full" src="/img/moon-bg.svg" />
+      <nuxt-img
+        placeholder
+        class="w-full"
+        src="https://storage.googleapis.com/brimble-assets/img/moon-bg.svg"
+      />
     </div>
 
     <div class="mb-16">
@@ -12,8 +16,16 @@
         class="py-6 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-3.5"
       >
         <div></div>
-        <img v-if="!darkMode" src="/img/brimble-logo-dark.svg" />
-        <img v-else src="/img/brimble-logo-white.svg" />
+        <nuxt-img
+          placeholder
+          v-if="!darkMode"
+          src="https://storage.googleapis.com/brimble-assets/img/brimble-logo-dark.svg"
+        />
+        <nuxt-img
+          placeholder
+          v-else
+          src="https://storage.googleapis.com/brimble-assets/img/brimble-logo-white.svg"
+        />
 
         <div
           @click="darkMode = !darkMode"
@@ -30,10 +42,17 @@
     <template v-if="!darkMode">
       <div class="text-center px-7 flex flex-col items-center relative z-10">
         <div class="relative">
-          <img src="/img/404-dark.svg" />
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/404-dark.svg"
+          />
 
           <div class="absolute -bottom-24 -left-24">
-            <img class="h-48 sm:h-auto" src="/img/astronaut.svg" />
+            <nuxt-img
+              placeholder
+              class="h-48 sm:h-auto"
+              src="https://storage.googleapis.com/brimble-assets/img/astronaut.svg"
+            />
           </div>
         </div>
         <h1
@@ -58,10 +77,17 @@
     <template v-else>
       <div class="text-center px-7 flex flex-col items-center relative z-10">
         <div class="relative">
-          <img src="/img/404-white.svg" />
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/404-white.svg"
+          />
 
           <div class="absolute -bottom-24 -left-24">
-            <img class="h-48 sm:h-auto" src="/img/astronaut.svg" />
+            <nuxt-img
+              placeholder
+              class="h-48 sm:h-auto"
+              src="https://storage.googleapis.com/brimble-assets/img/astronaut.svg"
+            />
           </div>
         </div>
         <h1

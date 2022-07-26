@@ -22,8 +22,16 @@
     </div>
 
     <div class="w-full">
-      <img class="hidden sm:block" src="/img/audioly.svg" />
-      <img class="sm:hidden mx-auto" src="/img/audioly-mobile.svg" />
+      <nuxt-img
+        placeholder
+        class="hidden sm:block"
+        src="https://storage.googleapis.com/brimble-assets/img/audioly.svg"
+      />
+      <nuxt-img
+        placeholder
+        class="sm:hidden mx-auto"
+        src="https://storage.googleapis.com/brimble-assets/img/audioly-mobile.svg"
+      />
     </div>
   </section>
 </template>

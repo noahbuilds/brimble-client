@@ -8,8 +8,16 @@
         class="py-6 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-3.5"
       >
         <div></div>
-        <img v-if="!darkMode" src="/img/brimble-logo-dark.svg" />
-        <img v-else src="/img/brimble-logo-white.svg" />
+        <nuxt-img
+          placeholder
+          v-if="!darkMode"
+          src="https://storage.googleapis.com/brimble-assets/img/brimble-logo-dark.svg"
+        />
+        <nuxt-img
+          placeholder
+          v-else
+          src="https://storage.googleapis.com/brimble-assets/img/brimble-logo-white.svg"
+        />
 
         <div
           @click="switchModes"
@@ -36,8 +44,8 @@
           made easy
         </h1>
         <p class="mt-7 md:mt-12 max-w-[490px] mx-auto">
-          Spend less time on DevOps and more time building. The most efficient way to host
-          & scale your web app.
+          Spend less time on DevOps and more time building. The most efficient
+          way to host & scale your web app.
         </p>
 
         <button
@@ -49,12 +57,17 @@
       </div>
 
       <div class="mt-20 relative">
-        <img
+        <nuxt-img
+          placeholder
           class="md:w-full min-w-5xl absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
-          src="../static/img/hero-icons2-new.svg"
+          src="https://storage.googleapis.com/brimble-assets/img/hero-icons2-new.svg"
           alt=""
         />
-        <img class="md:w-1/2 mx-auto paraa relative" src="/img/hero-img.svg" />
+        <nuxt-img
+          placeholder
+          class="md:w-1/2 mx-auto paraa relative"
+          src="https://storage.googleapis.com/brimble-assets/img/hero-img.svg"
+        />
       </div>
     </template>
 
@@ -71,8 +84,8 @@
           made easy
         </h1>
         <p class="mt-7 md:mt-12 max-w-[490px] mx-auto text-white">
-          Spend less time on DevOps and more time building. The most efficient way to host
-          & scale your web app.
+          Spend less time on DevOps and more time building. The most efficient
+          way to host & scale your web app.
         </p>
 
         <button
@@ -84,12 +97,17 @@
       </div>
 
       <div class="mt-20 relative">
-        <img
+        <nuxt-img
+          placeholder
           class="md:w-full min-w-5xl absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
-          src="../static/img/hero-icons-new.svg"
+          src="https://storage.googleapis.com/brimble-assets/img/hero-icons-new.svg"
           alt=""
         />
-        <img class="md:w-1/2 mx-auto para relative" src="/img/hero.svg" />
+        <nuxt-img
+          placeholder
+          class="md:w-1/2 mx-auto para relative"
+          src="https://storage.googleapis.com/brimble-assets/img/hero.svg"
+        />
       </div>
     </template>
   </section>
@@ -123,7 +141,7 @@ export default {
     window.addEventListener("scroll", () => {
       let val = window.scrollY;
 
-      paraa.style.bottom = val * 0.6 + "px";
+      if (paraa) paraa.style.bottom = val * 0.6 + "px";
     });
   },
 };
@@ -131,7 +149,7 @@ export default {
 
 <style scoped>
 .background {
-  background-image: url("/img/hero-bg-dark.svg");
+  background-image: url("https://storage.googleapis.com/brimble-assets/img/hero-bg-dark.svg");
   background-size: cover;
   background-position: center;
 }

@@ -11,7 +11,10 @@
     >
       <div v-if="!completedForm">
         <div class="hidden md:block">
-          <img src="/img/join-beta.svg" />
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/join-beta.svg"
+          />
         </div>
 
         <h1 class="mt-8 text-black font-medium text-2xl">
@@ -128,7 +131,11 @@
 
       <div v-else>
         <div>
-          <img class="mx-auto" src="/img/successful.svg" />
+          <nuxt-img
+            placeholder
+            class="mx-auto"
+            src="https://storage.googleapis.com/brimble-assets/img/successful.svg"
+          />
         </div>
 
         <h1 class="mt-10 text-lg text-secondary text-center">

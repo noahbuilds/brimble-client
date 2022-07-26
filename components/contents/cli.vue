@@ -21,11 +21,17 @@
 
       <div class="mt-16 md:mt-8 space-y-6">
         <div class="md:hidden">
-          <img src="/img/brimble-in-circle.svg" />
+          <nuxt-img
+            placeholder
+            src="https://storage.googleapis.com/brimble-assets/img/brimble-in-circle.svg"
+          />
         </div>
         <div class="flex gap-1.5 md:gap-3.5 items-center text-xs sm:text-sm">
           <div class="hidden md:block">
-            <img src="/img/brimble-in-circle.svg" />
+            <nuxt-img
+              placeholder
+              src="https://storage.googleapis.com/brimble-assets/img/brimble-in-circle.svg"
+            />
           </div>
           <div class="bg-secondary py-2.5 px-3.5 text-white rounded-xl">
             brimble login
@@ -35,7 +41,10 @@
 
         <div class="flex gap-1.5 md:gap-3.5 items-center text-xs sm:text-sm">
           <div class="hidden md:block">
-            <img src="/img/brimble-in-circle.svg" />
+            <nuxt-img
+              placeholder
+              src="https://storage.googleapis.com/brimble-assets/img/brimble-in-circle.svg"
+            />
           </div>
           <div class="bg-secondary py-2.5 px-3.5 text-white rounded-xl">
             brimble dev -/path/to/project
@@ -45,7 +54,10 @@
 
         <div class="flex gap-1.5 md:gap-3.5 items-center text-xs sm:text-sm">
           <div class="hidden md:block">
-            <img src="/img/brimble-in-circle.svg" />
+            <nuxt-img
+              placeholder
+              src="https://storage.googleapis.com/brimble-assets/img/brimble-in-circle.svg"
+            />
           </div>
           <div class="bg-secondary py-2.5 px-3.5 text-white rounded-xl">
             brimble cook -/path/to/project
@@ -65,8 +77,16 @@
     <div
       class="bg-transparent md:bg-[#F3F6FC] rounded-3xl md:px-6 flex items-center h-auto md:h-[580px] lg:h-[700px] w-full"
     >
-      <img class="w-full hidden sm:block" src="/img/terminal.svg" />
-      <img class="w-full sm:hidden" src="/img/terminal-mobile.svg" />
+      <nuxt-img
+        placeholder
+        class="w-full hidden sm:block"
+        src="https://storage.googleapis.com/brimble-assets/img/terminal.svg"
+      />
+      <nuxt-img
+        placeholder
+        class="w-full sm:hidden"
+        src="https://storage.googleapis.com/brimble-assets/img/terminal-mobile.svg"
+      />
     </div>
   </section>
 </template>

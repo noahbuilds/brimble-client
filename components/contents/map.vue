@@ -16,8 +16,16 @@
       </div>
 
       <div class="mt-12 md:mt-4">
-        <img class="hidden sm:block" src="/img/mapping.svg" />
-        <img class="sm:hidden w-full" src="/img/mapping-mobile.svg" />
+        <nuxt-img
+          placeholder
+          class="hidden sm:block"
+          src="https://storage.googleapis.com/brimble-assets/img/mapping.svg"
+        />
+        <nuxt-img
+          placeholder
+          class="sm:hidden w-full"
+          src="https://storage.googleapis.com/brimble-assets/img/mapping-mobile.svg"
+        />
       </div>
     </div>
   </section>

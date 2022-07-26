@@ -7,11 +7,12 @@
         Get important <span class="text-primary">Usage Insights</span>
       </h1>
       <p class="text-paragraph">
-        Say goodbye to pointless data. With our insights, you get real web vital data from
-        your visitors.
+        Say goodbye to pointless data. With our insights, you get real web vital
+        data from your visitors.
       </p>
       <p class="text-paragraph">
-        Better accuracy, better performance, and better privacy for your visitors.
+        Better accuracy, better performance, and better privacy for your
+        visitors.
       </p>
       <button
         @click="toggleSidebar"
@@ -22,14 +23,25 @@
     </div>
 
     <div class="relative hidden sm:block">
-      <img class="h-auto lg:h-[740px] box" src="/img/analytics.png" />
+      <nuxt-img
+        placeholder
+        class="h-auto lg:h-[740px] box"
+        src="https://storage.googleapis.com/brimble-assets/img/analytics.png"
+      />
 
       <div class="absolute bottom-20 -left-40">
-        <img src="/img/stats.svg" />
+        <nuxt-img
+          placeholder
+          src="https://storage.googleapis.com/brimble-assets/img/stats.svg"
+        />
       </div>
     </div>
     <div class="sm:hidden">
-      <img class="w-full box" src="/img/analytics-mobile.svg" />
+      <nuxt-img
+        placeholder
+        class="w-full box"
+        src="https://storage.googleapis.com/brimble-assets/img/analytics-mobile.svg"
+      />
     </div>
   </section>
 </template>
