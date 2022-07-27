@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Brimble",
+    title: "Brimble - Deployment made easy",
     htmlAttrs: {
       lang: "en",
     },
@@ -10,6 +10,44 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
+      { name: "title", content: "Brimble - Deployment made easy" },
+      {
+        name: "description",
+        content:
+          "The most efficient way to host and scale your web apps. Be part of the 10k+ developers and teams building incredible things on Brimble.",
+      },
+      { name: "author", content: "Brimble" },
+      { name: "og:title", content: "Brimble - Deployment made easy" },
+      {
+        name: "og:description",
+        content: "The easiest place to deploy your web apps.",
+      },
+      { name: "og:type", content: "website" },
+      { name: "og:url", content: "https://brimble.io" },
+      {
+        name: "og:image",
+        content:
+          "https://storage.googleapis.com/brimble-assets/img/display_img.png",
+      },
+      { name: "og:image:width", content: "1200" },
+      { name: "og:image:height", content: "630" },
+      { name: "og:image:type", content: "image/png" },
+      { name: "og:image:alt", content: "Brimble logo" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:url", content: "https://brimble.io" },
+      { name: "twitter:site", content: "@brimblehq" },
+      { name: "twitter:creator", content: "@brimblehq" },
+      { name: "twitter:title", content: "Brimble - Deployment made easy" },
+      {
+        name: "twitter:description",
+        content: "The easiest place to deploy your web apps.",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://storage.googleapis.com/brimble-assets/img/display_img.png",
+      },
+      { name: "twitter:image:alt", content: "Brimble logo" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
