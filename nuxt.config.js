@@ -66,6 +66,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxt/postcss8",
     "@nuxt/image",
+    "@nuxtjs/google-analytics",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -84,5 +85,8 @@ export default {
   target: "static",
   image: {
     domains: ["storage.googleapis.com"],
+  },
+  googleAnalytics: {
+    id: "G-XHCLML0W5B",
   },
 };
