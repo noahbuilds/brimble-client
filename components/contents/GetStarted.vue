@@ -19,7 +19,7 @@
         </button>
 
         <a
-          href="https://www.youtube.com/watch?v=MPjzLXMQrKo&t=1s"
+          href="https://www.loom.com/share/8b12bc0b6b434a5c8ec2c0940f1321bf"
           target="_blank"
           class="flex items-center gap-3 cursor-pointer"
         >
