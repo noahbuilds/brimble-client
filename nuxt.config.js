@@ -50,6 +50,15 @@ export default {
       { name: "twitter:image:alt", content: "Brimble logo" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [
+      {
+        src: "https://www.googletagmanager.com/gtag/js?id=G-C20V2W5JW0",
+        async: true,
+      },
+      {
+        src: "js/gtag.js",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -66,7 +75,6 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxt/postcss8",
     "@nuxt/image",
-    "@nuxtjs/google-analytics",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -85,8 +93,5 @@ export default {
   target: "static",
   image: {
     domains: ["storage.googleapis.com"],
-  },
-  googleAnalytics: {
-    id: "G-XHCLML0W5B",
   },
 };
