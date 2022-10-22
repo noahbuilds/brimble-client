@@ -7,21 +7,14 @@
       </h1>
 
       <div class="mt-10 md:mt-28 flex flex-col md:flex-row gap-6 md:gap-5">
-        <div
-          v-for="(step, index) in steps"
-          :key="index"
-          class="bg-[#fafbfe] rounded-lg px-6 md:h-[280px] w-full py-8 md:py-0"
-        >
+        <div v-for="(step, index) in steps" :key="index"
+          class="bg-[#fafbfe] rounded-lg px-6 md:h-[280px] w-full py-8 md:py-0">
           <div class="md:h-[102px] relative">
             <div
               class="h-20 w-20 md:h-[100px] md:w-[100px] rounded-full flex justify-center items-center md:absolute left-0 -top-1/2"
-              :class="index === 0 ? 'bg-primary' : 'bg-white'"
-            >
-              <nuxt-img
-                placeholder
-                class="h-9 md:h-auto"
-                :src="`https://storage.googleapis.com/brimble-assets/img/icons/${step.icon}.svg`"
-              />
+              :class="index === 0 ? 'bg-primary' : 'bg-white'">
+              <nuxt-img placeholder class="h-9 md:h-auto"
+                :src="`https://storage.googleapis.com/brimble-assets/img/icons/${step.icon}.svg`" />
             </div>
           </div>
           <div class="text-[#000060] max-w-[265px] mt-11 md:mt-0">
@@ -35,32 +28,19 @@
     </div>
 
     <div
-      class="bg-gradient-to-b from-[#2E5CB8] to-[#7094DB] pt-20 sm:py-32 px-4 sm:px-12 rounded-[20px] relative mt-16 overflow-hidden"
-    >
+      class="bg-gradient-to-b from-[#2E5CB8] to-[#7094DB] pt-20 sm:py-32 px-4 sm:px-12 rounded-[20px] relative mt-16 overflow-hidden">
       <div class="text-white space-y-6 max-w-[543px] relative z-10">
         <div>
-          <nuxt-img
-            placeholder
-            class="hidden md:block"
-            src="https://storage.googleapis.com/brimble-assets/img/text-one.svg"
-          />
-          <nuxt-img
-            placeholder
-            class="md:hidden"
-            src="https://storage.googleapis.com/brimble-assets/img/text-one-small.svg"
-          />
+          <nuxt-img placeholder class="hidden md:block"
+            src="https://storage.googleapis.com/brimble-assets/img/text-one.svg" />
+          <nuxt-img placeholder class="md:hidden"
+            src="https://storage.googleapis.com/brimble-assets/img/text-one-small.svg" />
         </div>
         <div>
-          <nuxt-img
-            placeholder
-            class="hidden md:block"
-            src="https://storage.googleapis.com/brimble-assets/img/text-two.svg"
-          />
-          <nuxt-img
-            placeholder
-            class="md:hidden"
-            src="https://storage.googleapis.com/brimble-assets/img/text-two-small.svg"
-          />
+          <nuxt-img placeholder class="hidden md:block"
+            src="https://storage.googleapis.com/brimble-assets/img/text-two.svg" />
+          <nuxt-img placeholder class="md:hidden"
+            src="https://storage.googleapis.com/brimble-assets/img/text-two-small.svg" />
         </div>
         <p>
           Brimble manages auto-scaling deployment for your frontend apps,
@@ -71,40 +51,23 @@
           On brimble, you may launch your projects and cooperate with other
           developers.
         </p>
-        <button
-          @click="toggleSidebar"
-          class="py-6 px-8 bg-white text-black rounded-xl font-medium"
-        >
+        <button @click="toggleSidebar" class="py-6 px-8 bg-white text-black rounded-xl font-medium">
           Get Started with Brimble
         </button>
       </div>
 
       <div class="sm:hidden mt-20 relative z-10">
-        <nuxt-img
-          placeholder
-          class="mx-auto"
-          src="https://storage.googleapis.com/brimble-assets/img/person-mobile.svg"
-        />
+        <nuxt-img placeholder class="mx-auto" src="img/person-mobile.png" />
       </div>
 
       <div class="absolute bottom-0 right-0 hidden sm:block">
-        <nuxt-img
-          placeholder
-          src="https://storage.googleapis.com/brimble-assets/img/brimble-bg-icon.svg"
-        />
+        <nuxt-img placeholder src="https://storage.googleapis.com/brimble-assets/img/brimble-bg-icon.svg" />
       </div>
       <div class="absolute bottom-0 right-0 sm:hidden">
-        <nuxt-img
-          placeholder
-          src="https://storage.googleapis.com/brimble-assets/img/brimble-bg-icon-small.svg"
-        />
+        <nuxt-img placeholder src="https://storage.googleapis.com/brimble-assets/img/brimble-bg-icon-small.svg" />
       </div>
       <div class="absolute bottom-0 right-0 hidden sm:block">
-        <nuxt-img
-          placeholder
-          class="h-[240px] md:h-[320px] lg:h-auto"
-          src="https://storage.googleapis.com/brimble-assets/img/person.svg"
-        />
+        <nuxt-img placeholder class="h-[240px] md:h-[320px] lg:h-auto" src="img/person.png" />
       </div>
     </div>
   </section>
