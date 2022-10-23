@@ -16,11 +16,7 @@
       </div>
 
       <div class="mt-12 md:mt-4">
-        <nuxt-img
-          placeholder
-          class="hidden sm:block"
-          src="https://storage.googleapis.com/brimble-assets/img/mapping.svg"
-        />
+        <nuxt-img placeholder class="hidden sm:block" src="img/mapping.png" />
         <nuxt-img
           placeholder
           class="sm:hidden w-full"
