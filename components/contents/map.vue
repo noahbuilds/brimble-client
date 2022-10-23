@@ -20,7 +20,7 @@
         <nuxt-img
           placeholder
           class="sm:hidden w-full"
-          src="https://storage.googleapis.com/brimble-assets/img/mapping-mobile.svg"
+          src="img/mapping-mobile.png"
         />
       </div>
     </div>
