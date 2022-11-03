@@ -67,7 +67,7 @@
         <nuxt-img placeholder src="https://storage.googleapis.com/brimble-assets/img/brimble-bg-icon-small.svg" />
       </div>
       <div class="absolute bottom-0 right-0 hidden sm:block">
-        <nuxt-img placeholder class="h-[240px] md:h-[320px] lg:h-auto" src="img/person.png" />
+        <nuxt-img placeholder class="h-[240px] md:h-[320px] lg:h-[700px]" src="img/person.png" />
       </div>
     </div>
   </section>

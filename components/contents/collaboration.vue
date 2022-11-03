@@ -18,7 +18,7 @@
     <div class="relative editor">
       <nuxt-img placeholder class="chat w-40 lg:w-auto absolute top-1/4 left-1/3"
         src="https://storage.googleapis.com/brimble-assets/img/chat1.svg" alt="" />
-      <nuxt-img placeholder class="chat w-40 lg:w-auto absolute bottom-1/3 left-1/4" src="img/chat2.png" alt="" />
+      <nuxt-img placeholder class="chat w-40 lg:w-[300px] absolute bottom-1/3 left-1/4" src="img/chat2.png" alt="" />
       <nuxt-img placeholder class="chat w-40 lg:w-auto absolute top-3/4 left-1/2"
         src="https://storage.googleapis.com/brimble-assets/img/chat3.svg" alt="" />
       <nuxt-img placeholder src="https://storage.googleapis.com/brimble-assets/img/editor.svg" />
